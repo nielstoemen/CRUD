@@ -11,6 +11,7 @@
     </style>
 </head>
 <body>
+
     <div class="indexpage">
         <div class="navbar">
             <div class="headlogocont">  
@@ -32,7 +33,5 @@
 
     </div>
 
-   
-   
 </body>
 </html>
