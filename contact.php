@@ -16,7 +16,7 @@
 
             <div class="navlinks">
                 <a href="index.php">HOME</a></li>
-                <a href="contact.php">INFO</a></li>
+                <a href="info.php">plop</a></li>
                 <a href="contact.php">REISEN</a></li>
                 <a href="contact.php">BOEKEN</a></li>
                 <a href="contact.php">LOGIN</a></li>
