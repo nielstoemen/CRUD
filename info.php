@@ -23,6 +23,11 @@
             </div>
         </div>
     </div>
+    <div class="reisadverblok2">
+        <div class="reisadvertentie2">
+        <p>Freddy staat klaar om te reizen. <a href="index.php">BOEK NU EEN VAKANTIE MET HOGE KORTINGEN!!!</a></p>
+     </div>
+    </div>
     
     <div class="wereldtextsectie">
         <div class="sectietext1">
@@ -34,5 +39,21 @@
         <p>kunt u ergens niet uitkomen of lukt iets niet staan wij voor u klaar!! ook als online reserveren niet lukt! </p>
 
         </div>
+    </div>
+
+    <div class="infotextsectie">
+        <div class="sectietext2">
+        
+        <h1>HIER BIJ FAZBEAR TRAVELS STAAT KLANT ALTIJD OP NUMMER 1</h1>
+        <p>onze gastvriendelijke personeel geeft tips en helpt u als u bepaalde dingen nodig heeft.</p>
+        <p>kunt u ergens niet uitkomen of lukt iets niet staan wij voor u klaar!! ook als online reserveren niet lukt! </p>
+        </div>
+        <div class="sectieinfoafb2">
+        <img src="image/reisburr.png" alt="IMAGE ERROR" height="400px" width="500px">
+
+        </div>
+    </div>
+
+    
 </body>
 </html>

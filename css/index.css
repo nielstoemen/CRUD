@@ -311,6 +311,43 @@ background-color: aliceblue;
 }
 
 /*info pagina */
+/**/
+/**/
+
+.reisadverblok2{
+    height: 250px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-image: url('../image/palm.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 50px;
+}
+
+.reisadvertentie2{
+    height: 60px;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+    color: #092a5e;
+    font-size: large;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-top: 15px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+.reisadvertentie2 a:visited {
+  color: rgb(239, 5, 44);
+  background-color: transparent;
+  text-decoration: none;
+}
+
 
 .sectieinfo{
     height: 400px;
@@ -330,3 +367,47 @@ background-color: aliceblue;
     
     padding: 20px;
 }
+
+.sectietext2{
+    height: 400px;
+    width: 750px;
+    border: 5px solid rgb(247, 247, 247);
+    color: goldenrod;
+    background-color: antiquewhite;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 50px;
+    padding-top: 50px;
+    font-size: large;
+    padding: 5px;
+    
+ }
+
+.sectietext2 p {
+    
+    padding: 20px;
+}
+
+.infotextsectie{
+    height: 500px;
+    width: auto;
+    color: #092a5e;
+    font-weight: bold;
+    
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: center;
+    background-color: rgb(232, 232, 232);
+    margin-top: 50px;
+}
+
+.sectieinfoafb2{
+    height: 400px;
+    
+   
+    margin-top: 50px;
+
+}
+
