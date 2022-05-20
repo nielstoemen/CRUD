@@ -7,13 +7,15 @@
 "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css%22%3E -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="css/adminlogin.css">
     <title>Login Page</title>
 </head>
 
 <body>
+    <div class="container">
     <form action="includes/login.php" method="post">
         <div class="login-box">
+            <img src="image/feddy.png" class="freddy1">
             <h1>Login</h1>
 
             <div class="textbox">
@@ -32,6 +34,7 @@
                      name="login" value="Sign In">
         </div>
     </form>
+</div>
 </body>
 
 </html>

@@ -12,9 +12,8 @@
 </head>
 <body>
 
-
+    <img src="image/feddy.png" class="freddy1">
     <br><a href="includes/logout.php">logout</a>
-
     
 </body>
 </html>
