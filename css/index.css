@@ -213,6 +213,7 @@
     to {opacity: 1}
   }
 
+  /* contact page css*/
   .reisblok{
       height: 80px;
       width: auto;
@@ -261,7 +262,7 @@
 .contactformblok{
  height: 600px;
  width: auto;
- background-color: antiquewhite;
+background-color: aliceblue;
  display: flex;
  justify-content: space-between;
 }
@@ -272,7 +273,12 @@
     height: 600px;
     width: auto;
     padding-top: 100px;
-	background-color: whitesmoke;
+    background-image: url('../image/vakantiepromo.jpg');
+    background-repeat: no-repeat;
+    
+    
+    
+	
 }
 
 .locatieblok2{
@@ -280,8 +286,10 @@
     width: 80%;
     display: flex;
 	justify-content: space-between;
-    background-color: antiquewhite;
+   background-color: antiquewhite;
     margin-left: 10%;
+    margin-bottom: 50px;
+    opacity: 90%;
     
 	
 }
@@ -291,6 +299,8 @@
     background-color: whitesmoke;
     margin-left: 25px;
     margin-top: 50px;
+    padding-top: 75px;
+    border-radius: 25%;
 }
 
 .googlemapsholder{
