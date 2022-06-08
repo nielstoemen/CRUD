@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>FREDBEAR TRAVELS:Home</title>
     <link rel="stylesheet" href="css/index.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
@@ -24,7 +24,7 @@
                 <a href="contact.php">SERVICE EN CONTACT</a></li>
                 <a href="info.php">INFO</a></li>
                 <a href="contact.php">REISEN</a></li>
-                <a href="contact.php">BOEKEN</a></li>
+                <a href="gebruikeslogin.php">test contact 2.0</a></li>
                 <a href="contact.php">LOGIN</a></li>
                 
             </div>
