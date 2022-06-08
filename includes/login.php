@@ -13,28 +13,22 @@ if ($_SERVER["REQUEST_METHOD"]== "POST") {
       
     $adminname = test_input($_POST["adminname"]);
     $password = test_input($_POST["password"]);
-    $stmt = $connect->prepare("SELECT * FROM adminlogin");
+    $stmt = $connect->prepare("SELECT * FROM adminlogin WHERE adminname = :adminname AND password = :password");
+    $stmt->bindParam(':adminname', $adminname);
+    $stmt->bindParam(':password', $password);
     $stmt->execute();
-    $users = $stmt->fetchAll();
-      
-    foreach($users as $user) {
+    $user = $stmt->fetch();
           
-        if(($user['adminname'] == $adminname) && 
-            ($user['password'] == $password)) {
-                // Starting session
-                session_start();
-                
-                // Storing session data
-                $_SESSION["admin"] = "admin";
+    if($user) {
+            // Starting session
+            session_start();
+            
+            // Storing session data
+            $_SESSION["admin"] = "admin";
 
-                header("Location: ../adminpage.php");
-        }
-        else {
-            echo "<script language='javascript'>";
-            echo "alert('WRONG INFORMATION')";
-            echo "</script>";
-            header("Location: admin.php");
-        }
+            header("Location: ../adminpage.php");
+    } else {
+        header("Location: ../admin.php");
     }
 }
 ?>
