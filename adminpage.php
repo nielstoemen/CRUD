@@ -57,6 +57,10 @@
                <input type="text" name="prijs" id="prijs">
             </p>
             <p>
+               <label for="beschrijving">beschrijving:</label>
+               <input type="beschrijving" name="beschrijving" id="beschrijving">
+            </p>
+            <p>
                <label for="datum">Datum:</label>
                <input type="text" name="datum" id="datum">
             </p>
@@ -68,6 +72,8 @@
                <label for="sterren">sterren (1 tot 5):</label>
                <input type="text" name="sterren" id="sterren">
             </p>
+
+            <input type="submit" value="Submit">
         </div>
     </div>
     <footer>
