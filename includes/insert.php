@@ -33,7 +33,9 @@
     $datum = ($_POST["datum"]);
     $pension = ($_POST["pension"]);
     $sterren = ($_POST["sterren"]);
-    $stmt = $connect->prepare("INSERT INTO rijzen (beschrijving, prijs, datum, pension, sterren, titel) VALUES (:beschrijving, :prijs, :datum, :pension, :sterren, :titel)");
+    $image = ($_POST["image"]);
+    $stmt = $connect->prepare("INSERT INTO rijzen (foto, beschrijving, prijs, datum, pension, sterren, titel) VALUES (:image, :beschrijving, :prijs, :datum, :pension, :sterren, :titel)");
+    $stmt->bindParam(':image', $image);
     $stmt->bindParam(':beschrijving', $beschrijving);
     $stmt->bindParam(':prijs', $prijs);
     $stmt->bindParam(':datum', $datum);
