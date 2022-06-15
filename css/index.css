@@ -12,7 +12,7 @@
 }
 
 .navbar{
-    height: 125px;
+    height: 105px;
     width: auto;
     background-color: lightblue;
     display: flex;
@@ -87,39 +87,36 @@
 }
 
 .wereldtextsectie{
-    height: 500px;
+    height: 550px;
     width: auto;
     color: #092a5e;
     font-weight: bold;
     
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: center;
-    background-color: rgb(222, 222, 205);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+    background-color: #fafaeb;
+    
 }
-.sectietext1{
-    height: 400px;
-    width: 400px;
-   
-    margin-top: 50px;
 
-}
 
 .sectie2img{
     height: 400px;
     width: 400px;
     border: 5px solid rgb(247, 247, 247);
-    background-color: antiquewhite;
+    background-color: rgb(208, 254, 242);
+   
     font-family: 'Nunito', sans-serif;
     margin-top: 50px;
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 50px;
     font-size: x-large;
+    box-shadow:  5px black;
 }
 
 .sectie3{
@@ -262,15 +259,47 @@
 }
 
 
-
+/* hierin staat de locatie en de link naar de form pagina*/
 .contactformblok{
- height: 600px;
+ height: 700px;
  width: auto;
 background-color: aliceblue;
  display: flex;
- justify-content: space-between;
+ justify-content: space-around;
 }
  
+
+.contacttextsectie{
+  height: 400px;
+  width: 650px;
+  border: 5px solid rgb(247, 247, 247);
+  color: #fafaeb;
+  background-color:  #5cbcc07b;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 5px;
+  padding-top: 20px;
+  font-size: large;
+}
+
+.contacttextsectie p{
+ padding: 20px;
+  
+}
+
+.contacttextsectie h2{
+  padding: 10px;
+}
+
+
+.googlemapssectie{
+  height: 400px;
+  width: 380px;
+  margin-top: 50px;
+  margin-right: 50px;
+ border: 1px solid black;
+}
 
 
 .locatieblok{
@@ -317,7 +346,7 @@ background-color: aliceblue;
 /*info pagina */
 /**/
 /**/
-
+/* het witte blokje met daarin een div dat een linkje moet voorstellen dus een soort van ad*/
 .reisadverblok2{
     height: 250px;
     width: auto;
@@ -352,13 +381,29 @@ background-color: aliceblue;
   text-decoration: none;
 }
 
+/* hierin zit het info van hetv bedrijf met de gekleurde foto's*/
+.infointroductie1{
+  height: 550px;
+  width: auto;
+  color: #092a5e;
+  font-weight: bold;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
+  background-color: #fafaeb;
+  
+}
 
 .sectieinfo{
     height: 400px;
     width: 750px;
     border: 5px solid rgb(247, 247, 247);
-    color: goldenrod;
-    background-color: antiquewhite;
+    color: #fafaeb;
+    background-color:  #5cbcc07b;
     font-family: 'Nunito', sans-serif;
     margin-top: 50px;
     padding-top: 50px;
@@ -373,53 +418,51 @@ background-color: aliceblue;
     padding: 20px;
 }
 
-.sectietext2{
-    height: 400px;
-    width: 750px;
-    border: 5px solid rgb(247, 247, 247);
-    color: goldenrod;
-    background-color: aliceblue;
-    font-family: 'Nunito', sans-serif;
-    margin-top: 50px;
-    
-    font-size: large;
-    padding: 5px;
-    padding-left: 30px;
-    opacity: 80%;
-    
- }
 
-.sectietext2 p {
-    
-    padding: 20px;
+
+.infotextsectie{
+    height: 900px;
+    width: auto;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+    background-color: #fafaeb;
     
 }
 
-.infotextsectie{
-    height: 500px;
-    width: auto;
-    color: #092a5e;
-    font-weight: bold;
-    background-image: url('../image/zeeachtergrond.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: center;
-    background-color: rgb(232, 232, 232);
-    
+.sectietext2{
+  height: 500px;
+  width: 700px;
+  border: 5px solid rgb(247, 247, 247);
+  color: #fafaeb;
+  background-color:  #5cbcc07b;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 150px;
+  margin-left: 50px;
+  font-size: large;
+  
+  
+  
+}
+
+.sectietext2 p {
+  
+  padding: 20px;
+  
 }
 
 .sectieinfoafb2{
     height: 400px;
+    width: auto;
     border: 1px solid black;
     
    
-    margin-top: 50px;
+    margin-top: 200px;
+    margin-right: 50px;
 
 }
 
@@ -427,15 +470,9 @@ background-color: aliceblue;
 /*gebruikers login page design*/
 /*-------------------------------------------------------------------------*/
 
-html {
-    height: 100%;
-  }
-  body {
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
-    background: linear-gradient(#141e30, #243b55);
-  }
+
+  
+  
   
   .login-box {
     position: absolute;
@@ -444,7 +481,7 @@ html {
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: rgba(0,0,0,.5);
+    background: rgba(212, 206, 206, 0.5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
@@ -594,4 +631,9 @@ html {
       bottom: 100%;
     }
   }
+  /*------------------------------------------------------------------------*/
+/*einde userlogin*/
 
+
+  /*contact form???*/
+  

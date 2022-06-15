@@ -38,9 +38,7 @@
     </div>
 
     <div class="wereldtextsectie">
-        <div class="sectietext1">
-        <img src="image/freddy.png" alt="IMAGE ERROR" height="400px" width="500px">
-        </div>
+       
         <div class="sectie2img">
         <p>FAZBEAR TRAVELS TRAVELT OVER DE HELE WERELD</p>
 
