@@ -37,7 +37,7 @@
                         <tr>
                             <th>
                             <?php 
-                                echo '<img src="image/'.$reizen['foto'].'" height="50px" width="50px" alt="image error">'. ':' . ' ' . $reizen['titel'] . $reizen['beschrijving'] . $reizen['prijs'] . $reizen['pension'] . $reizen['sterren'];
+                                echo '<img src="image/'.$reizen['foto'].'" height="50px" width="50px" alt="image error">'. ':' . ' ' . $reizen['titel']. ', ' . $reizen['beschrijving']. ', ' . $reizen['prijs']. ', ' . $reizen['pension']. ', ' . $reizen['sterren'];
                             ?> 
                             <a href="detail.php?id=<?php echo $reizen['id']; ?>">Meer informatie</a>
                             </th> 
@@ -72,6 +72,9 @@
                <label for="sterren">sterren (1 tot 5):</label>
                <input type="text" name="sterren" id="sterren">
             </p>
+
+            <label>Select Image File:</label>
+            <input type="text" name="image"> <br>
 
             <input type="submit" value="Submit">
         </div>
