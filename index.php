@@ -25,7 +25,7 @@
             <div class="navlinks">
                 <a href="contact.php">SERVICE EN CONTACT</a></li>
                 <a href="info.php">INFO</a></li>
-                <a href="contact.php">REISEN</a></li>
+                <a href="reisen.php">REIZEN</a></li>
                 <a href="gebruikeslogin.php">test contact 2.0</a></li>
                 <a href="jesse.php">Login</a></li>
                 
