@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="navbar">
@@ -42,6 +43,7 @@
         <h1>HIER BIJ FAZBEAR TRAVELS STAAT KLANT ALTIJD OP NUMMER 1</h1>
         <p>onze gastvriendelijke personeel geeft tips en helpt u als u bepaalde dingen nodig heeft.</p>
         <p>kunt u ergens niet uitkomen of lukt iets niet staan wij voor u klaar!! ook als online reserveren niet lukt! </p>
+        <p>wilt u contact opnemen met een van onze collega's omdat u een vraag heeft? <a href="contact.php#contactref">KLIK DAN HIER</a></li></p>
 
         </div>
     </div>
@@ -59,6 +61,17 @@
         </div>
     </div>
 
-    
+    <div class="footbar">
+            <div class="navlinks2">
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <p>all rights reseverd fredbear travels</p>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-pintrest"></a>
+         
+            </div>
+        </div>
 </body>
 </html>
