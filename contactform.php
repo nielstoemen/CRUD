@@ -12,7 +12,7 @@
 <div class="contact">
 <div id="container">
   <h2>contact</h2>
-  <form action="mailto:1190447@student.roc-nijmegen.com" method="post" id="contact_form">
+  <form action="mailto:1190447@student.roc-nijmegen.nl" method="post" id="contact_form">
   
     <div class="name">
       <label for="name"></label>
