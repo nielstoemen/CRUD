@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FREDBEAR TRAVELS: INFO</title>
     <link rel="stylesheet" href="css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="navbar">
@@ -18,7 +22,7 @@
             <div class="navlinks">
                 <a href="index.php">HOME</a></li>
                 <a href="contact.php">CONTACT & SERVICE</a></li>
-                <a href="contact.php">REISEN</a></li>
+                <a href="reisen.php">REISEN</a></li>
                 <a href="contact.php">BOEKEN</a></li>
                 <a href="contact.php">LOGIN</a></li>
                 
@@ -31,7 +35,7 @@
      </div>
     </div>
     
-    <div class="wereldtextsectie">
+    <div class="infointroductie1">
         <div class="sectietext1">
         <img src="image/reisburr.png" alt="IMAGE ERROR" height="400px" width="500px">
         </div>
@@ -39,6 +43,7 @@
         <h1>HIER BIJ FAZBEAR TRAVELS STAAT KLANT ALTIJD OP NUMMER 1</h1>
         <p>onze gastvriendelijke personeel geeft tips en helpt u als u bepaalde dingen nodig heeft.</p>
         <p>kunt u ergens niet uitkomen of lukt iets niet staan wij voor u klaar!! ook als online reserveren niet lukt! </p>
+        <p>wilt u contact opnemen met een van onze collega's omdat u een vraag heeft? <a href="contact.php#contactref">KLIK DAN HIER</a></li></p>
 
         </div>
     </div>
@@ -46,16 +51,27 @@
     <div class="infotextsectie">
         <div class="sectietext2">
         
-        <h1>HIER BIJ FAZBEAR TRAVELS STAAT KLANT ALTIJD OP NUMMER 1</h1>
-        <p>onze gastvriendelijke personeel geeft tips en helpt u als u bepaalde dingen nodig heeft.</p>
-        <p>kunt u ergens niet uitkomen of lukt iets niet staan wij voor u klaar!! ook als online reserveren niet lukt! </p>
+        <h1>fredbear travels geschiedenis</h1>
+        <p>FAZBEAR Travels begon als een klein Reisbureau in Rotterdam.opgericht door mike oxlong </p>
+        <p> het doel van het bedrijf was vliegen voor zo goedkoop mogelijk. en het is de .... dat er voor zoorgde dat fazbear travels zo groot is geworden</p>
         </div>
         <div class="sectieinfoafb2">
-        <img src="image/reisburr.png" alt="IMAGE ERROR" height="400px" width="500px">
+        <img src="image/slide3.png" alt="IMAGE ERROR" height="400px" width="500px">
 
         </div>
     </div>
 
-    
+    <div class="footbar">
+            <div class="navlinks2">
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <p>all rights reseverd fredbear travels</p>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-pintrest"></a>
+         
+            </div>
+        </div>
 </body>
 </html>
