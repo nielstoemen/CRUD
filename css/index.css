@@ -840,6 +840,7 @@ background-color: aliceblue;
     display: flex;
     margin-top: 150px;
     
+    
     }
 
     .reizenfotoblok{
@@ -857,5 +858,6 @@ background-color: aliceblue;
       color: #092a5e;
     font-size: large;
     font-family: 'Nunito', sans-serif;
+    align-content: center;
       
     }
