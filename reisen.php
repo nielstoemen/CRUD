@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reizen</title>
     <link rel="stylesheet" href="css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+    </style>
 </head>
 <body>
 <div class="indexpage">
@@ -23,6 +26,46 @@
                     
                 </div>
             </div>
+            <div class="reizpage">
+                <div class="reizen">
+
+
+        <?php
+                    include_once 'includes/connect.php';
+
+                    $sql = "SELECT * FROM rijzen";
+                    $stmt = $connect->prepare($sql);
+                    $stmt->execute();
+                    $result = $stmt->fetchALL();
+                    ?>
+
+                    <?php
+                    foreach ($result as $reizen) 
+                    { ?>
+                            <?php 
+                                echo "<div class ='reizenblok'>";
+                                    echo "<div class = 'reizenfotoblok'>";
+                                        echo  '<img src="image/'.$reizen['foto'].'" height="100%" width="100%" alt="image error">';
+                                        
+                                 echo "</div>";
+                                    echo "<div class = 'reizeninfoblok'>";
+                                       echo ''. $reizen['titel']. ', ' . $reizen['beschrijving']. ', ' . $reizen['prijs']. ', ' . $reizen['pension']. ', ' . $reizen['sterren'];
+                                    echo "</div>";
+                                 echo "</div>";
+                                 
+
+
+                                ?>
+                        
+                           
+
+                            <!--<a href="detail.php?id=<?php echo $reizen['id']; ?>">Meer informatie</a> -->
+                    <?php 
+                } ?>
+                
+                </div>
+                </div>
         </div>
+
 </body>
 </html>

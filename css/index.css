@@ -345,7 +345,7 @@ background-color: aliceblue;
   border: 5px solid rgb(247, 247, 247);
   color: #092a5e;
     font-weight: bold;
-  background-color:  #5cbcc07b;
+ 
   font-family: 'Nunito', sans-serif;
   margin-top: 50px;
   margin-left: 20px;
@@ -471,8 +471,6 @@ background-color: aliceblue;
     border: 5px solid rgb(247, 247, 247);
     color: #092a5e;
     font-weight: bold;
-    
-    background-color:  #5cbcc07b;
     font-family: 'Nunito', sans-serif;
     margin-top: 50px;
     padding-top: 50px;
@@ -516,7 +514,7 @@ background-color: aliceblue;
   border: 5px solid rgb(247, 247, 247);
   color: #092a5e;
     font-weight: bold;
-  background-color:  #5cbcc07b;
+
   font-family: 'Nunito', sans-serif;
   margin-top: 150px;
   margin-left: 50px;
@@ -821,4 +819,45 @@ background-color: aliceblue;
  
 
     
-  
+  /* reizen pagina css*/
+  .reizpage{
+    height: auto;
+    width: 100%;
+    background-color: aliceblue;
+  }
+  .reizen {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    
+    
+  }
+  .reizenblok {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 150px;
+    
+    
+    }
+
+    .reizenfotoblok{
+      height: 200px;
+      width: 200px;
+      margin-top: 20px;
+      
+      
+    }
+
+    .reizeninfoblok{
+      height: 200px;
+      width: 100%;
+      margin-top: 20px;
+      color: #092a5e;
+    font-size: large;
+    font-family: 'Nunito', sans-serif;
+    align-content: center;
+      
+    }
