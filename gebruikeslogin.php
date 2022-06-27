@@ -4,30 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/icons.js"></script>
 </head>
 <body>
 <div class="login-box">
   <h2>Login</h2>
-  <form>
+  <form action="includes/userlogin.php" method="post">
     <div class="user-box">
-      <input type="text" name="" required="">
-      <label>Username</label>
+    <div class="textbox">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text" placeholder="Email" name="email" value="">
     </div>
-    <div class="user-box">
-      <input type="password" name="" required="">
-      <label>Password</label>
+    <div class="textbox">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input type="password" placeholder="wachtwoord" name="wachtwoord" value="">
     </div>
-    <a href="#">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Submit
-    </a>
-    <a href="#">
+
+    <input class="buttonius" type="submit"
+        name="login" value="Inloggen">
+    <a href="accountmaken.php">
       <span></span>
       <span></span>
       <span></span>

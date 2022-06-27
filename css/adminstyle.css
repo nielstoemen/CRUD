@@ -43,13 +43,12 @@ nav{
 
 .info{
     width: 70%;
-    background-color:red;
     float:left;
+    padding-left: 20px;;
 }
 
 .aanmakenreis{
     width: 30%;
-    background-color: blue;
     overflow: hidden;
 }
 
