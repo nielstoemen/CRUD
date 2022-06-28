@@ -79,6 +79,31 @@
             <input type="submit" value="Submit">
         </div>
     </div>
+    <div class="info">
+        <?php
+                    include_once 'includes/connect.php';
+
+                    $sql = "SELECT * FROM accounts";
+                    $stmt = $connect->prepare($sql);
+                    $stmt->execute();
+                    $result = $stmt->fetchALL();
+                    ?>
+
+                <table>
+                    <?php
+                    foreach ($result as $account) 
+                    { ?>
+                        <tr>
+                            <th>
+                            <?php 
+                                echo $account['email']. ': '. $account['wachtwoord'];
+                            ?>
+                            </th> 
+                        </tr>
+                    <?php 
+                } ?>
+                </table>
+        </div>
     <footer>
     <button class="logoutbutton"><a href="includes/logout.php">logout</a></button>
     </footer>
