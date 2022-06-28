@@ -860,3 +860,9 @@ background-color: aliceblue;
     align-content: center;
       
     }
+
+    .inforeis{
+      width: 60%;
+      margin: 50px;
+      padding: 20px;
+    }

@@ -57,7 +57,7 @@
 
 
                                 ?>
-                        
+                                <a href="inforeis.php?id=<?php echo $reizen['id']; ?>">Meer informatie</a>
                            
 
                             <!--<a href="detail.php?id=<?php echo $reizen['id']; ?>">Meer informatie</a> -->
