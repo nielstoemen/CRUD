@@ -9,11 +9,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="indexpage">
     <div class="navbar">
                 <div class="headlogocont">  
+                <a href="index.php">
                 <img src="image/feddy.png" alt="IMAGE ERROR" height="75px" width="75px">
                 </div>
 
@@ -21,8 +23,7 @@
                     <a href="index.php">HOME</a></li>
                     <a href="CONTACT.php">CONTACT & SERVICE</a></li>
                     <a href="info.php">info</a></li>
-                    <a href="gebruikeslogin.php">test contact 2.0</a></li>
-                    <a href="contact.php">LOGIN</a></li>
+                    <a href="gebruikeslogin.php">Login</a></li>
                     
                 </div>
             </div>
@@ -65,6 +66,19 @@
                 
                 </div>
                 </div>
+        </div>
+
+        <div class="footbar">
+            <div class="navlinks2">
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <p>all rights reseverd fredbear travels</p>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-pintrest"></a>
+         
+            </div>
         </div>
 
 </body>

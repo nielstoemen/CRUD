@@ -19,6 +19,7 @@
     <div class="indexpage">
         <div class="navbar">
             <div class="headlogocont">  
+            <a href="index.php">
              <img src="image/feddy.png" alt="IMAGE ERROR" height="75px" width="75px">
             </div>
 
@@ -26,8 +27,7 @@
                 <a href="contact.php">SERVICE EN CONTACT</a></li>
                 <a href="info.php">INFO</a></li>
                 <a href="reisen.php">REIZEN</a></li>
-                <a href="gebruikeslogin.php">test contact 2.0</a></li>
-                <a href="jesse.php">Login</a></li>
+                <a href="gebruikeslogin.php">Login</a></li>
                 
             </div>
         </div>
