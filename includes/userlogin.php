@@ -24,9 +24,9 @@ if ($_SERVER["REQUEST_METHOD"]== "POST") {
             session_start();
             
             // Storing session data
-            $_SESSION["user"] = "user";
+            $_SESSION["userID"] = $user['id'];
 
-            header("Location: ../index.php");
+            header("Location: ../mijnaccount.php");
     } else {
         header("Location: ../gebruikeslogin.php");
     }
