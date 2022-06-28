@@ -4,7 +4,10 @@
     if(isset($_SESSION["admin"])){
         unset($_SESSION["admin"]);
     }
+    if(isset($_SESSION["userID"])){
+        unset($_SESSION["userID"]);
+    }
     session_destroy();
 
-    header("Location: ../admin.php");
+    header("Location: ../index.php");
 ?>

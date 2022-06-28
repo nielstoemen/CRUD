@@ -37,21 +37,25 @@
         $stmt = $connect->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchALL();
-
+        ?>
+        <p>Mijn reizen</p>
+        <?php
         foreach ($result as $reizen){
-            
+            $sql = "SELECT * FROM rijzen WHERE id = $reizen[reisid]";
+            $stmt = $connect->prepare($sql);
+            $stmt->execute();
+            $printen = $stmt->fetchALL();
+
+            foreach ($printen as $uitprinten){
+                echo '<img src="image/'.$uitprinten['foto'].'" height="50px" width="50px" alt="image error">'. ':' . ' ' . $uitprinten['titel']. ', ' . $uitprinten['beschrijving']. ', ' . $uitprinten['prijs']. ', ' . $uitprinten['pension']. ', ' . $uitprinten['sterren'];
+            }  
         }
 
-        $sql = "SELECT * FROM rijzen WHERE id = $reizen[reisid]";
-        $stmt = $connect->prepare($sql);
-        $stmt->execute();
-        $printen = $stmt->fetchALL();
-
-        foreach ($printen as $uitprinten){
-            echo '<img src="image/'.$uitprinten['foto'].'" height="50px" width="50px" alt="image error">'. ':' . ' ' . $uitprinten['titel']. ', ' . $uitprinten['beschrijving']. ', ' . $uitprinten['prijs']. ', ' . $uitprinten['pension']. ', ' . $uitprinten['sterren'];
-        }
+        
 
     ?>
-    
+    <footer>
+    <button class="logoutbutton"><a href="includes/logout.php">logout</a></button>
+    </footer>
 </body>
 </html>
