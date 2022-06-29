@@ -43,7 +43,7 @@
     <div class="inforeis">
 
     <?php
-        echo '<img src="image/'.$result['foto'].'" height="150" width="150" alt="image error">'. ':' . ' ' . $result['titel'] . ' ' . $result['beschrijving'] . ' ' . $result['prijs'] . ' ' . $result['pension'] . ' ' . $result['sterren'];                  
+        echo '<img src="image/'.$result['foto'].'" height="150" width="150" alt="image error">'. ':' . ' ' . $result['titel'] . ' ' . $result['beschrijving'] . ' €' . $result['prijs'] . ' per persoon ' . $result['pension'] . ' ' . $result['sterren']. ' sterren';                  
     ?>
 
         <a href="includes/reiskoppelen.php?id=<?php echo $result['id']; ?>"> Boeken</a>
