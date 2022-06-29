@@ -123,7 +123,6 @@
                             <?php 
                                 echo $boeking['reisid']. ': '. $boeking['accountid'];
                             ?>
-                            <a href="detailreis.php?id=<?php echo $boeking['id']; ?>">Meer informatie</a>
                             </th> 
                         </tr>
                     <?php 

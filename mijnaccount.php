@@ -46,15 +46,20 @@
             $stmt->execute();
             $printen = $stmt->fetchALL();
 
-            foreach ($printen as $uitprinten){
-                echo '<img src="image/'.$uitprinten['foto'].'" height="50px" width="50px" alt="image error">'. ':' . ' ' . $uitprinten['titel']. ', ' . $uitprinten['beschrijving']. ', ' . $uitprinten['prijs']. ', ' . $uitprinten['pension']. ', ' . $uitprinten['sterren'];
+            ?><div class="rijzenpakken"><?php
+
+            foreach ($printen as $uitprinten){ ?>
+                <div class="rijzensluiten"><?php
+                echo '<img src="image/'.$uitprinten['foto'].'" height="50px" width="50px" alt="image error">'. ':' . ' ' . $uitprinten['titel']. ', ' . $uitprinten['beschrijving']. ', €' . $uitprinten['prijs']. ' Per persoon, ' . $uitprinten['pension']. ', ' . $uitprinten['sterren']. ' sterren';
+                ?></div><?php
             }  
+            ?></div><?php
         }
 
         
 
     ?>
-    <footer>
+    <footer class="footbar">
     <button class="logoutbutton"><a href="includes/logout.php">logout</a></button>
     </footer>
 </body>
