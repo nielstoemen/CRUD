@@ -721,12 +721,15 @@ background-color: aliceblue;
   /*de footer css*/
   .footbar{
     height: 85px;
-    width: auto;
+    width: 100%;
     background-color: lightblue;
     display: flex;
     justify-content: center;
     padding-left: 25px;
     padding-top: 25px;
+    position: fixed;
+    bottom: 0;
+    margin-top: auto;
     
 }
 
@@ -828,7 +831,7 @@ background-color: aliceblue;
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: auto;
+    height: 500vh;
     margin: auto;
     
     
@@ -865,4 +868,14 @@ background-color: aliceblue;
       width: 60%;
       margin: 50px;
       padding: 20px;
+    }
+
+    .rijzenpakken{
+      width: 100%;
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+
+    .rijzensluiten{
+      width: 75%;
     }

@@ -19,6 +19,8 @@
         $stmt->execute();
         $result = $stmt->fetch();
 
+        echo $result['id'];
+
         ?>
 
         <table>

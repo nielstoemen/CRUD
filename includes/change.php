@@ -1,8 +1,12 @@
 <?php
     include_once 'connect.php';
-?>
+    include('session.php');
 
-    <?php
+    $sql = "SELECT * FROM rijzen WHERE id =:id";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":id", $_GET['id']);
+    $stmt->execute();
+    $result = $stmt->fetch();
 
     $titel = ($_POST["titel"]);
     $prijs = ($_POST["prijs"]);
@@ -12,7 +16,7 @@
     $sterren = ($_POST["sterren"]);
     $image = ($_POST["image"]);
     $id = ($_POST["id"]);
-    $stmt = $connect->prepare("UPDATE rijzen SET id=:id, foto=:image, beschrijving=:beschrijving, prijs=:prijs, datum=:datum, pension=:pension, sterren=:sterren, titel=:titel WHERE id=:id");
+    $stmt = $connect->prepare("UPDATE rijzen SET foto=:image, beschrijving=:beschrijving, prijs=:prijs, datum=:datum, pension=:pension, sterren=:sterren, titel=:titel WHERE id=:id");
     $stmt->bindParam(':image', $image);
     $stmt->bindParam(':beschrijving', $beschrijving);
     $stmt->bindParam(':prijs', $prijs);

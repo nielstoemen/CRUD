@@ -30,6 +30,7 @@
             <div class="reizpage">
                 <div class="reizen">
 
+        <p>Voordat u gaat boeken, maak zeker dat u bent ingelogd. Zonder account kunt u geen reis boeken</p>
 
         <?php
                     include_once 'includes/connect.php';
@@ -50,7 +51,7 @@
                                         
                                  echo "</div>";
                                     echo "<div class = 'reizeninfoblok'>";
-                                       echo ''. $reizen['titel']. ', ' . $reizen['beschrijving']. ', ' . $reizen['prijs']. ', ' . $reizen['pension']. ', ' . $reizen['sterren'];
+                                       echo ''. $reizen['titel']. ', ' . $reizen['beschrijving']. ', €' . $reizen['prijs']. ' Per persoon, ' . $reizen['pension']. ', ' . $reizen['sterren']. ' sterren';
                                     echo "</div>";
                                  echo "</div>";
                                  
