@@ -41,5 +41,6 @@
             echo '<img src="image/'.$reizen['foto'].'" height="50px" width="50px" alt="image error">'. ':' . ' ' . $reizen['titel']. ', ' . $reizen['beschrijving']. ', €' . $reizen['prijs']. ' per persoon, ' . $reizen['pension']. ', ' . $reizen['sterren']. ' sterren';
         }
     ?>
+    <a href="inforeis.php?id=<?php echo $reizen['id']; ?>">Meer informatie</a>
 </body>
 </html>
