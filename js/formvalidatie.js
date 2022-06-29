@@ -1,4 +1,4 @@
-function checkform (form)
+function checkform (contact_form)
 {
     var postMessage = true;
     if (form.naam.value == ""){
@@ -45,3 +45,4 @@ function checkform (form)
     }
     return postMessage
 }
+
