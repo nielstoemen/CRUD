@@ -18,12 +18,19 @@
         $stmt->bindParam(":id", $_GET['id']);
         $stmt->execute();
         $result = $stmt->fetch();
+
+        var_dump($result);
     ?>
 
     <form action="includes/recensieschrijven.php" method="post">
             <p>
                <label for="recensie">Recensie</label>
                <input type="text" name="recensie" id="recensie">
+            </p>
+
+            <p>
+               <label hidden for="id">id</label>
+               <input hidden type="text" name="id" id="id" value="<?php echo $_GET['id'];?>">
             </p>
 
             <input type="submit" value="Submit">
