@@ -104,6 +104,32 @@
                 } ?>
                 </table>
         </div>
+        <div class="info">
+        <?php
+                    include_once 'includes/connect.php';
+
+                    $sql = "SELECT * FROM boekingen";
+                    $stmt = $connect->prepare($sql);
+                    $stmt->execute();
+                    $result = $stmt->fetchALL();
+                    ?>
+
+                <table>
+                    <?php
+                    foreach ($result as $boeking) 
+                    { ?>
+                        <tr>
+                            <th>
+                            <?php 
+                                echo $boeking['reisid']. ': '. $boeking['accountid'];
+                            ?>
+                            <a href="detailreis.php?id=<?php echo $boeking['id']; ?>">Meer informatie</a>
+                            </th> 
+                        </tr>
+                    <?php 
+                } ?>
+                </table>
+        </div>
     <footer>
     <button class="logoutbutton"><a href="includes/logout.php">logout</a></button>
     </footer>
