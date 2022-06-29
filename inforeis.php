@@ -46,9 +46,49 @@
         echo '<img src="image/'.$result['foto'].'" height="150" width="150" alt="image error">'. ':' . ' ' . $result['titel'] . ' ' . $result['beschrijving'] . ' ' . $result['prijs'] . ' ' . $result['pension'] . ' ' . $result['sterren'];                  
     ?>
 
-    <a href="includes/reiskoppelen.php?id=<?php echo $result['id']; ?>"> Boeken</a>
+        <a href="includes/reiskoppelen.php?id=<?php echo $result['id']; ?>"> Boeken</a>
+
+    <div class="recensie">
+
+    <p>reviews:</p>
+    <a href="recensiemaken.php?id=<?php echo $result['id']; ?>">Schrijf een recensie</a>
+    <?php
+
+        $sql = "SELECT * FROM recensies WHERE reisid =:id";
+        $stmt = $connect->prepare($sql);
+        $stmt->bindParam(":id", $_GET['id']);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        ?>
+        <table>
+            <?php
+            foreach ($result as $recensie) 
+            { ?>
+                <tr>
+                    <th>
+
+                    <?php
+                        $sql = "SELECT * FROM accounts WHERE id = $_SESSION[userID]";
+                        $stmt = $connect->prepare($sql);
+                        $stmt->execute();
+                        $idje = $stmt->fetch();
+
+                        echo $idje['email']. ': ';
+                    ?>
+
+                    <?php
+                        echo $recensie['recensie'];
+                    ?>
+                    </th> 
+                </tr>
+            <?php 
+        } ?>
+        </table>
 
     </div>
+
+    </div>
+    
 
 </body>
 </html>
