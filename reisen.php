@@ -76,7 +76,7 @@
             <p>all rights reseverd fredbear travels</p>
             <a href="#" class="fa fa-youtube"></a>
             <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-pintrest"></a>
+            <a href="mijnaccount.php" class="fa fa-pintrest">reis</a>
          
             </div>
         </div>
