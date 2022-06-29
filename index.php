@@ -28,6 +28,7 @@
                 <a href="info.php">INFO</a></li>
                 <a href="reisen.php">REIZEN</a></li>
                 <a href="gebruikeslogin.php">Login</a></li>
+                <a href="chocho.php">JESS</a></li>
                 
             </div>
         </div>
@@ -91,7 +92,6 @@
             <p>all rights reseverd fredbear travels</p>
             <a href="#" class="fa fa-youtube"></a>
             <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-pintrest"></a>
             <a href="mijnaccount.php" class="fa fa-pintrest">reis</a>
          
             </div>
