@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<?php
+        if(!isset($_SESSION['userID'])) { 
+            session_start(); 
+        }
+
+        if (isset($_SESSION['userID'])) {
+            include('includes/usersession.php');
+        }
+    ?>
+
 <div class="indexpage">
     <div class="navbar">
                 <div class="headlogocont">  
@@ -21,12 +31,20 @@
 
                 <div class="navlinks">
                     <a href="index.php">HOME</a></li>
-                    <a href="CONTACT.php">CONTACT & SERVICE</a></li>
-                    <a href="info.php">info</a></li>
-                    <a href="gebruikeslogin.php">Login</a></li>
-                    
+                    <a href="info.php">INFO</a></li>
+                    <a href="contact.php">CONTACT & SERVICE</a></li>
+                    <?php
+                        
+
+                        if (isset($_SESSION['userID'])) {
+                            ?><a href="includes/logout.php">logout</a></li><?php
+                        }else{
+                            ?><a href="gebruikeslogin.php">login</a></li><?php
+                        }
+                    ?>
                 </div>
             </div>
+        </div>
             <div class="reizpage">
                 <div class="reizen">
 

@@ -1,3 +1,6 @@
+<?php 
+    include('includes/connect.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +18,17 @@
 </head>
 <body>
     
-    <div class="indexpage">
+<?php
+        if(!isset($_SESSION['userID'])) { 
+            session_start(); 
+        }
+
+        if (isset($_SESSION['userID'])) {
+            include('includes/usersession.php');
+        }
+    ?>
+
+<div class="indexpage">
     <div class="navbar">
                 <div class="headlogocont">  
                 <a href="index.php">
@@ -26,8 +39,15 @@
                     <a href="index.php">HOME</a></li>
                     <a href="info.php">INFO</a></li>
                     <a href="reisen.php">REISEN</a></li>
-                    <a href="gebruikeslogin.php">Login</a></li>
-                    
+                    <?php
+                        
+
+                        if (isset($_SESSION['userID'])) {
+                            ?><a href="includes/logout.php">logout</a></li><?php
+                        }else{
+                            ?><a href="gebruikeslogin.php">login</a></li><?php
+                        }
+                    ?>
                 </div>
             </div>
         </div>

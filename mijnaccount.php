@@ -17,17 +17,39 @@
 </head>
 <body>
 
-    <div class="navbar">
-        <div class="headlogocont">  
-            <img src="image/feddy.png" alt="IMAGE ERROR" height="75px" width="75px">
-        </div>
+<?php
+        if(!isset($_SESSION['userID'])) { 
+            session_start(); 
+        }
 
-        <div class="navlinks">
-            <a href="contact.php">SERVICE EN CONTACT</a></li>
-            <a href="info.php">INFO</a></li>
-            <a href="reisen.php">REIZEN</a></li>
+        if (isset($_SESSION['userID'])) {
+            include('includes/usersession.php');
+        }
+    ?>
+
+<div class="indexpage">
+    <div class="navbar">
+                <div class="headlogocont">  
+                <a href="index.php">
+                <img src="image/feddy.png" alt="IMAGE ERROR" height="75px" width="75px">
+                </div>
+
+                <div class="navlinks">
+                    <a href="index.php">HOME</a></li>
+                    <a href="info.php">INFO</a></li>
+                    <a href="reisen.php">REISEN</a></li>
+                    <?php
+                        
+
+                        if (isset($_SESSION['userID'])) {
+                            ?><a href="includes/logout.php">logout</a></li><?php
+                        }else{
+                            ?><a href="gebruikeslogin.php">login</a></li><?php
+                        }
+                    ?>
+                </div>
+            </div>
         </div>
-    </div>
 
     <?php
 
