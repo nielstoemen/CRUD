@@ -26,7 +26,6 @@
                 <a href="index.php">HOME</a></li>
                 <a href="contact.php">CONTACT & SERVICE</a></li>
                 <a href="reisen.php">REISEN</a></li>
-                <a href="gebruikeslogin.php">Login</a></li>
                 
             </div>
         </div>

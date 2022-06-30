@@ -1,3 +1,6 @@
+<?php 
+    include('includes/connect.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,22 +15,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="navbar">
-            <div class="headlogocont">  
-            <a href="index.php">
-                <img src="image/feddy.png" alt="IMAGE ERROR" height="75px" width="75px">
-            </a>
-            </div>
+<?php
+        if(!isset($_SESSION['userID'])) { 
+            session_start(); 
+        }
 
-            <div class="navlinks">
-                <a href="index.php">HOME</a></li>
-                <a href="contact.php">CONTACT & SERVICE</a></li>
-                <a href="reisen.php">REISEN</a></li>
-                <a href="gebruikeslogin.php">Login</a></li>
-                
+        if (isset($_SESSION['userID'])) {
+            include('includes/usersession.php');
+        }
+    ?>
+
+<div class="indexpage">
+    <div class="navbar">
+                <div class="headlogocont">  
+                <a href="index.php">
+                <img src="image/feddy.png" alt="IMAGE ERROR" height="75px" width="75px">
+                </div>
+
+                <div class="navlinks">
+                    <a href="index.php">HOME</a></li>
+                    <a href="contact.php">CONTACT & SERVICE</a></li>
+                    <a href="reisen.php">REISEN</a></li>
+                    <?php
+                        
+
+                        if (isset($_SESSION['userID'])) {
+                            ?><a href="includes/logout.php">logout</a></li><?php
+                        }else{
+                            ?><a href="gebruikeslogin.php">login</a></li><?php
+                        }
+                    ?>
+                </div>
             </div>
         </div>
-    </div>
     <div class="reisadverblok2">
         <div class="reisadvertentie2">
         <p>Freddy staat klaar om te reizen. <a href="reisen.php">BOEK NU EEN VAKANTIE MET HOGE KORTINGEN!!!</a></p>

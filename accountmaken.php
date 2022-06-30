@@ -23,7 +23,6 @@
                 <a href="contact.php">SERVICE EN CONTACT</a></li>
                 <a href="info.php">INFO</a></li>
                 <a href="reisen.php">REIZEN</a></li>
-                <a href="gebruikeslogin.php">Login</a></li>
                 
             </div>
         </div>
