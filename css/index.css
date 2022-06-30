@@ -808,3 +808,24 @@ background-color: aliceblue;
     align-content: center;
       
     }
+
+    .inforeis{
+      width: 60%;
+      margin: 50px;
+      padding: 20px;
+    }
+
+    .rijzenpakken{
+      width: 100%;
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+
+    .rijzensluiten{
+      width: 75%;
+    }
+
+    .recensie{
+      width: 100%;
+      padding: 50px;
+    }
