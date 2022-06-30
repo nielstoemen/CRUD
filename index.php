@@ -28,7 +28,7 @@
                 <a href="info.php">INFO</a></li>
                 <a href="reisen.php">REIZEN</a></li>
                 <a href="gebruikeslogin.php">Login</a></li>
-                <a href="chocho.php">JESS</a></li>
+               
                 
             </div>
         </div>
@@ -36,7 +36,7 @@
 
         <div class="introductiesectie">
     
-            <h1>BOEK HIER DE IDEAALE VAKANTIE</h1>
+            <h1>BOEK HIER DE IDEALE VAKANTIE</h1>
 
         </div>
 

@@ -27,11 +27,15 @@
                     
                 </div>
             </div>
+            <div class="reisadverblok3">
+                 <div class="reisadvertentie3">
+                    <p>Voordat u gaat boeken, maak zeker dat u bent ingelogd. Zonder account kunt u geen reis boeken</p>
+                  </div>
+            </div>
             <div class="reizpage">
                 <div class="reizen">
 
-        <p>Voordat u gaat boeken, maak zeker dat u bent ingelogd. Zonder account kunt u geen reis boeken</p>
-
+        
         <?php
                     include_once 'includes/connect.php';
 
