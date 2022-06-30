@@ -48,15 +48,18 @@
     </div>
 
     <div class="infotextsectie">
-        <div class="sectietext2">
         
-        <h1>fredbear travels geschiedenis</h1>
-        <p>FAZBEAR Travels begon als een klein Reisbureau in Rotterdam.opgericht door mike oxlong </p>
-        <p> het doel van het bedrijf was vliegen voor zo goedkoop mogelijk. en het is de .... dat er voor zoorgde dat fazbear travels zo groot is geworden</p>
-        </div>
         <div class="sectieinfoafb2">
         <img src="image/slide3.png" alt="IMAGE ERROR" height="400px" width="500px">
 
+        </div>
+
+        <div class="sectietext2">
+        
+        <h1>fredbear travels geschiedenis 1945 - heden COMPLEET</h1>
+        <p>FAZBEAR Travels begon als een klein Reisbureau in Rotterdam.opgericht door mike oxlong </p>
+        <p> het doel van het bedrijf was vliegen voor zo goedkoop mogelijk. en het is de .... dat er voor zoorgde dat fazbear travels zo groot is geworden</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo optio quisquam consectetur ratione dolor accusantium sint non, delectus, fugit, vitae ut? Voluptatibus quia nemo, unde magni a praesentium vero.</p>
         </div>
     </div>
 
