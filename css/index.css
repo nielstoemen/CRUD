@@ -557,7 +557,7 @@ background-color: aliceblue;
     background-image: url('../image/palm.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
     padding-top: 50px;
 }
 
