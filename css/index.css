@@ -137,6 +137,8 @@
         color: white;
 }
 
+
+ 
 .introductiesectie{
     height: 300px;
     width: auto;
@@ -279,6 +281,11 @@ margin-top: 50px;
   }
 
   /* contact page css*/
+   /* contact page css*/
+    /* contact page css*/
+     /* contact page css*/
+      /* contact page css*/
+       /* contact page css*/
   .reisblok{
       height: 80px;
       width: auto;
@@ -307,12 +314,64 @@ margin-top: 50px;
     background-color: transparent;
     text-decoration: none;
   }
+
+
+  /* responsive maken van het reisadvertentie */ 
+
+  @media only screen and (max-width: 822px) {
+    .reisadvertentie{
+      height: 50px;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      background-color: skyblue;
+      color: #092a5e;
+      font-size:medium;
+      
+      font-family: 'Nunito', sans-serif;
+
+  }
+  }
+
+  @media only screen and (max-width: 647px) {
+    .reisadvertentie{
+      height: 40px;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      background-color: skyblue;
+      color: #092a5e;
+      font-size:small;
+      
+      font-family: 'Nunito', sans-serif;
+      align-items: center;
+
+  }
+  }
+
+  @media only screen and (max-width: 545px) {
+    .reisadvertentie{
+      height: 30px;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      background-color: skyblue;
+      color: #092a5e;
+      font-size:x-small;
+      
+      font-family: 'Nunito', sans-serif;
+      align-items: center;
+
+  }
+  }
+
+/* einde responsive van het reisadvertentietje */
   .contactblok{
       height: 110px;
       width: auto;
     
  }
-
+ 
 
   .contacttiteltext{
       height: 40px;
@@ -336,11 +395,27 @@ background-color: aliceblue;
  display: flex;
  justify-content: space-around;
 }
- 
 
+/* contactformblok responsive maken */
+@media only screen and (max-width: 922px) {
+  .contactformblok{
+    height: 700px;
+    width: 100%;
+   background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+   }
+}
+
+
+
+ 
+/* dit is de contactblok waar de text in staat en het linkje naar de contact formulier*/
 .contacttextsectie{
   height: 400px;
-  width: 650px;
+  width: 100%;
   border: 5px solid rgb(247, 247, 247);
   color: #092a5e;
     font-weight: bold;
@@ -362,7 +437,19 @@ background-color: aliceblue;
   padding: 10px;
 }
 
-
+@media only screen and (max-width: 642px) {
+  .contacttextsectie{
+    height: 400px;
+    width: 100%;
+    border: 5px solid rgb(247, 247, 247);
+    color: #092a5e;
+      font-weight: bold;
+   
+    font-family: 'Nunito', sans-serif;
+    font-size: smaller;
+    align-items: center;
+  }
+}
 
 
 .googlemapssectie{
@@ -464,9 +551,24 @@ background-color: aliceblue;
   
 }
 
+@media only screen and (max-width: 1090px) {
+  .infointroductie1{
+    height: 1100px;
+    width: 100%;
+    color: #092a5e;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: aliceblue;
+    
+  }
+}
+
 .sectieinfo{
     height: 400px;
-    width: 750px;
+    width: 40%;
     border: 5px solid rgb(247, 247, 247);
     color: #092a5e;
     font-weight: bold;
