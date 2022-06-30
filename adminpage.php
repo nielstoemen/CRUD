@@ -93,11 +93,13 @@
                     <?php
                     foreach ($result as $account) 
                     { ?>
+                    <a href="accountmaken.php">Account aanmaken</a>
                         <tr>
                             <th>
                             <?php 
                                 echo $account['email']. ': '. $account['wachtwoord'];
                             ?>
+                                <a href="accountdelete.php?id=<?php echo $account['id']; ?>">Meer informatie</a>
                             </th> 
                         </tr>
                     <?php 
@@ -122,6 +124,32 @@
                             <th>
                             <?php 
                                 echo $boeking['reisid']. ': '. $boeking['accountid'];
+                            ?>
+                                <a href="boekingdelete.php?id=<?php echo $boeking['id']; ?>">Meer informatie</a>
+                            </th> 
+                        </tr>
+                    <?php 
+                } ?>
+                </table>
+        </div>
+        <div class="info">
+        <?php
+                    include_once 'includes/connect.php';
+
+                    $sql = "SELECT * FROM recensies";
+                    $stmt = $connect->prepare($sql);
+                    $stmt->execute();
+                    $result = $stmt->fetchALL();
+                    ?>
+
+                <table>
+                    <?php
+                    foreach ($result as $recensie) 
+                    { ?>
+                        <tr>
+                            <th>
+                            <?php 
+                                echo $recensie['reisid']. ': '. $recensie['recensie'];
                             ?>
                             </th> 
                         </tr>

@@ -35,7 +35,15 @@
             <div class="reizpage">
                 <div class="reizen">
 
-        
+       
+
+        <form action="zoeken.php" method="post">
+            <p>
+               <label for="zoeken">Zoeken:</label>
+               <input type="text" name="zoeken" id="zoeken">
+
+            <input type="submit" value="zoeken">
+
         <?php
                     include_once 'includes/connect.php';
 

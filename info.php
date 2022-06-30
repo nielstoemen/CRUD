@@ -30,7 +30,7 @@
     </div>
     <div class="reisadverblok2">
         <div class="reisadvertentie2">
-        <p>Freddy staat klaar om te reizen. <a href="index.php">BOEK NU EEN VAKANTIE MET HOGE KORTINGEN!!!</a></p>
+        <p>Freddy staat klaar om te reizen. <a href="reisen.php">BOEK NU EEN VAKANTIE MET HOGE KORTINGEN!!!</a></p>
      </div>
     </div>
     

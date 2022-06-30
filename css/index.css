@@ -933,60 +933,23 @@ background-color: aliceblue;
       
     }
 
-    .reisadverblok3{
-      height: 250px;
-      width: auto;
-      display: flex;
-      justify-content: center;
-      background-image: url('../image/vakantie4.jpg');
-      background-size: 100%;
-      background-repeat: no-repeat;
-      
-      
-      padding-top: 50px;
+    .inforeis{
+      width: 60%;
+      margin: 50px;
+      padding: 20px;
     }
-    
-    @media only screen and (max-width: 540px) {
-      .reisadverblok3{
-        height: 150px;
-        width: 100%;
-        
-      }
-    }  
-    
-    .reisadvertentie3{
-      height: 60px;
-      width: 750px;
-      display: flex;
-      justify-content: center;
-      background-color: skyblue;
-      color: #092a5e;
-      font-size: large;
-      margin-left: 50px;
-      margin-top: 20px;
-      padding-top: 15px;
-      font-family: 'Nunito', sans-serif;
-    
+
+    .rijzenpakken{
+      width: 100%;
+      padding-left: 30px;
+      padding-top: 20px;
     }
-    /* het reis advertentie blokje responsive maken */
-    @media only screen and (max-width: 1090px) {
-    .reisadvertentie3{
-      
-      width: 80%;
-      font-size: small;
-      
-    
+
+    .rijzensluiten{
+      width: 75%;
     }
-    }
-    /* bij 650 pixels het vakje van de reisadvertentie aanpassen */
-    @media only screen and (max-width: 650px) {
-    .reisadvertentie3{
-      
-      width: 80%;
-      font-size: x-small;
-      margin-right: 20px;
-    
-      
-    
-    }
+
+    .recensie{
+      width: 100%;
+      padding: 50px;
     }
